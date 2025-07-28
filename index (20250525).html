@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佐藤慎一 - 職務経歴書</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    :root {
+        --primary-color: #3c6382;
+        --secondary-color: #60a3bc;
+        --accent-color: #82ccdd;
+        --background-color: #f6f6f6;
+        --text-color: #2c3e50;
+        --header-bg-color: #ecf0f1;
+        --link-color: #3498db;
+        --timeline-color: #bdc3c7;
+        --list-item-bg: #e8f3f8;
+        --job-title-color: #2980b9;
+        --job-period-color: #7f8c8d;
+    }
+
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 1000px;
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        flex-grow: 1;
+        border-radius: 8px;
+        page-break-inside: avoid;
+    }
+
+    header {
+        background-color: var(--header-bg-color);
+        color: var(--primary-color);
+        padding: 10px 0;
+        margin-bottom: 20px;
+        border-radius: 8px 8px 0 0;
+        page-break-after: avoid;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        page-break-inside: avoid;
+    }
+
+    .last-updated {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        font-size: 0.9em;
+        color: var(--job-period-color);
+    }
+
+    h1, h2, h3 {
+        margin: 0 0 15px 0;
+        page-break-after: avoid;
+    }
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 2px;
+        color: var(--primary-color);
+    }
+
+    h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--secondary-color);
+        padding-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 1em;
+        color: var(--secondary-color);
+    }
+
+    .work-experience {
+        margin-bottom: 30px;
+        page-break-inside: avoid;
+    }
+
+    .timeline {
+        position: relative;
+        padding-left: 30px;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: var(--timeline-color);
+    }
+
+    .job {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        page-break-inside: avoid;
+    }
+
+    .job:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transform: translateY(-3px);
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        page-break-inside: avoid;
+    }
+
+    ul li {
+        background-color: var(--list-item-bg);
+        padding: 8px 12px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        page-break-inside: avoid;
+    }
+
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    @media print {
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+        }
+
+        .container {
+            box-shadow: none;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            page-break-inside: avoid;
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            padding: 0;
+            page-break-after: avoid;
+        }
+
+        h1 {
+            font-size: 1.6em;
+        }
+
+        .job, .work-experience, .skills, .publications {
+            page-break-inside: avoid;
+            break-inside: avoid;
+            margin-bottom: 10px;
+        }
+
+        h2, h3 {
+            break-before: avoid;
+            page-break-before: avoid;
+        }
+
+        ul, ul li {
+            page-break-inside: avoid;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <!-- コンテンツはここに入ります -->
+        <header>
+            <div class="header-content">
+                <p class="last-updated">最終更新日: 2025年8月1日</p>
+                <h1>佐藤 慎一</h1>
+                <p class="subtitle">障害を持ち、分野や形態に関ずフルリモートで働きます</p>
+            </div>
+        </header>
+        <section class="work-experience">
+            <h2>職務経歴</h2>
+            <div class="timeline">
+                <article class="job">
+                    <h3 class="job-title">ユースタイルラボラトリー株式会社</h3>
+                    <p class="job-period">2025年1月 - 2025年4月</p>
+                    <ul>
+                        <li>リサーチャー/新規事業調査/利用規約作成/CVF(共通語彙基盤)の作成</li>                        
+                    </ul>
+                </article>
+                <article class="job">
+                    <h3 class="job-title">株式会社みらいワークス - 業務委託</h3>
+                    <p class="job-period">2024年12月 - 2025年1月</p>
+                    <ul>
+                        <li>生駒市アクセラレーションプログラムメンター</li>                        
+                    </ul>
+                </article>
+                <article class="job">
+                    <h3 class="job-title">株式会社スーツ - タスク管理ツール開発</h3>
+                    <p class="job-period">2024年5月 - 現在</p>
+                    <ul>
+                        <li>タスク管理ツールのひな形作成</li>                        
+                    </ul>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">株式会社Four Leaf Technology - PM</h3>
+                    <p class="job-period">2023年9月 - 2023年12月</p>
+                    <ul>
+                        <li>新電力のトラブル対応（稼働10時間程度）</li>
+                    </ul>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">株式会社LOOOP - GXリサーチャー</h3>
+                    <p class="job-period">2023年7月 - 2023年9月</p>
+                    <ul>
+                        <li>GXに関する行政資料や研究資料の調査</li>
+                        <li>GXに関する予算やGX移行債についての整理</li>
+                    </ul>
+                    <p>参照URL: <a href="https://public.tableau.com/views/20_16899950897190/1" target="_blank" rel="noopener noreferrer">Tableau</a></p>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">Circular In-finity - 創設者</h3>
+                    <p class="job-period">2021年9月 - 2024年3月</p>
+                    <ul>
+                        <li>渉外、人材獲得、イベント運営、コンテスト運営、助成金取得</li>
+                        <li>協議会8つ程度参加</li>
+                        <li>G7 platform 掲載中</li>
+                        <li>COP28からJCCI2024へ</li>
+                    </ul>
+                    <p>参照URL: <a href="https://bit.ly/m/2030_oo" target="_blank" rel="noopener noreferrer">https://bit.ly/m/2030_oo</a></p>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">株式会社LRQA - 審査員</h3>
+                    <p class="job-period">2022年6月 - 2022年12月</p>
+                    <ul>
+                        <li>算定報告制度の政省令改正</li>
+                        <li>稼働ほぼなし</li>
+                    </ul>
+                    <p>参照URL: <a href="https://www.env.go.jp/earth/ondanka/eegs_seminar/" target="_blank" rel="noopener noreferrer">環境省_EEGS説明会</a></p>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">株式会社フォーバル - コンサルタント</h3>
+                    <p class="job-period">2021年8月 - 2022年5月</p>
+                    <ul>
+                        <li>環境対応または補助金の調査</li>
+                    </ul>
+                    <p>参照URL: <a href="https://www.forval.co.jp/consulting/environment.php" target="_blank" rel="noopener noreferrer">https://www.forval.co.jp/consulting/environment.php</a></p>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">環境省 - 技官</h3>
+                    <p class="job-period">2014年1月 - 2021年7月</p>
+                    <ul>
+                        <li>気候変動と廃棄物に関する行政</li>
+                        <li>気候変動に関する政府間パネル（IPCC）第5次評価報告書（AR5）サイクル</li>
+                        <li>広域認定制度関連</li>
+                        <li>食品リサイクル関連</li>
+                    </ul>
+                    <p>参照URL: 
+                        <a href="https://www.env.go.jp/recycle/waste/kouiki.html" target="_blank" rel="noopener noreferrer">広域認定制度関連 | 環境再生・資源循環</a><br>
+                        <a href="https://www.env.go.jp/recycle/food/index.html" target="_blank" rel="noopener noreferrer">食品リサイクル関連 | 環境再生・資源循環</a>
+                    </p>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">日立製作所 - 設計</h3>
+                    <p class="job-period">2012年4月 - 2013年9月</p>
+                    <ul>
+                        <li>水道の監視制御システムの設計開発</li>
+                    </ul>
+                    <p>参照URL: <a href="https://www.hitachi.co.jp/products/infrastructure/product_solution/water_environment/" target="_blank" rel="noopener noreferrer">日立製作所の水環境ソリューション</a></p>
+                </article>
+        
+                <article class="job">
+                    <h3 class="job-title">副業</h3>
+                    <p class="job-period">2021年9月 - 2023年6月</p>
+                    <ul>
+                        <li>スポットコンサル40件以上（株式会社ビザスク,<a href="https://assets.st-note.com/img/1702284019258-VFX4jTAQMV.png" target="_blank" rel="noopener noreferrer">株式会社spready</a>)</li>
+                        <li><a href=" https://coki.jp/author/sato-shinichi/" target="_blank" rel="noopener noreferrer">ライター(株式会社Sacco)</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="skills">
+            <h2>スキル／資格</h2>
+            <ul>
+                <li>海外対応：TOEIC 860点／英語でプレスリリース作成、会議スピーチ／小説など</li>
+                <li>情報収集：OSINT／ジャーナリズム／産官学民のネットワーク</li>
+                <li>法リテラシー：ビジネス実務法務検定2級（見込み）</li>
+                <li>ESG対応：環境社会検定／ユース活動経験／高校生へ講演</li>
+                <li>ITリテラシー：
+                    <ul>
+                        <li>学生時の研究（<a href="https://bit.ly/3hoQt59" target="_blank" rel="noopener noreferrer">バイオインフォマティクス</a>・<a href="https://bit.ly/2RFKKNu" target="_blank" rel="noopener noreferrer">数値シミュレーション</a>）</li>
+                                                
+                        <li>生成AI（OpenAIo3/Claude4/gemini/stable diffusion/perplexity）</li>
+                        <li>Google Data Analyst Professional Certificate</li>
+                        <li>Google Cybersecurity Certificate</li>
+                        <li>Tableau works<a href="https://note.com/equity2050/n/nc53c889de597" target="_blank" rel="noopener noreferrer">https://note.com/equity2050/n/nc53c889de597</a></li>
+                        <li>GPTs作成<a href="https://note.com/equity2050/n/nc53c889de5979" target="_blank" rel="noopener noreferrer">https://note.com/equity2050/n/nc53c889de5979</a></li>
+                    </ul>
+                </li>
+                <li>技術士補（上下水道）</li>
+            </ul>
+        </section>
+       <section class="publications">
+    <h2>論文／著書</h2>
+    <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: none; padding: 0;">
+        <li>海洋深層への熱入力による湧昇に関する基礎的検討</li>
+        <li>取排水のない発電所冷却水システムに関する基礎研究 第二報:湧昇による肥沃化効果検討のためのモデル構築</li>
+        <li><a href="https://www.researchgate.net/publication/380127883_Finalized_paper_as_of_0426_for_GPTs_to_enhance_storytelling" target="_blank" rel="noopener noreferrer">Finalized paper as of 0426 for GPTs to enhance storytelling</a></li>
+        <li>衡平な選択（国立国会図書館寄贈）</li>
+        <li>コンテストのすゝめ</li>
+        <li>エヴァとジャワのこどもたいこう</li>
+        <li>わくわくみどりのまほうとちきゅうさん</li>
+        <li><a href="https://www.amazon.com/dp/B0DHWM4DTM" target="_blank" rel="noopener noreferrer">UNSUNG CHIBILAW</a></li>
+    </ul>
+</section>
+
+    </div>
+</body>
+</html>
