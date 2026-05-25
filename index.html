@@ -210,6 +210,10 @@
       background: #f3f6f9;
     }
 
+    .continuation-title {
+      display: none;
+    }
+
     .job-link {
       margin-top: 2px;
       font-size: 0.8rem;
@@ -334,7 +338,8 @@
       }
 
       .section {
-        page-break-inside: avoid;
+        break-inside: auto;
+        page-break-inside: auto;
       }
 
       .screen-only {
@@ -353,6 +358,32 @@
       .job,
       .job li {
         background: #fff;
+      }
+
+      .job {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .job-muted::before {
+        border-color: #9fb0c0;
+      }
+
+      .job-muted .job-title {
+        color: #4f6475;
+      }
+
+      .job-muted .job-period,
+      .job-muted li,
+      .job-muted .job-link {
+        color: #4f5f6f;
+      }
+
+      .continuation-title {
+        display: flex;
+        break-before: page;
+        page-break-before: always;
+        margin-top: 0;
       }
 
       .publications-list {
@@ -506,6 +537,8 @@
             </ul>
             <p class="job-link">参照URL: <a href="https://www.forval.co.jp/consulting/environment.php" target="_blank" rel="noopener noreferrer">https://www.forval.co.jp/consulting/environment.php</a></p>
           </article>
+
+          <h2 class="section-title print-only continuation-title">職務経歴（続き） <span>Work Experience continued</span></h2>
 
           <article class="job">
             <div class="job-header">
